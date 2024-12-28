@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <h1 class="text-5xl justify-self-center font-mono text-gray-600 mt-2">TIC TAK TOE</h1><br>
+
+    <div id="parent" class="gamecontainer  h-[50%] justify-self-center bg-gradient-to-r from-cyan-500 to-blue-500 ...">
+        <div class="parent flex">
+            <div class="child1 text-[80px] text-center font-mono font-bold border-b-2 border-r-2 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+            <div class="child2 text-[80px] text-center font-mono font-bold border-2 border-t-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+            <div class="child3 text-[80px] text-center font-mono font-bold border-2 border-t-0 border-r-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+        </div>
+        <div class="parent flex">
+            <div class="child4 text-[80px] text-center font-mono font-bold border-2 border-l-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+            <div class="child5 text-[80px] text-center font-mono font-bold border-2 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+            <div class="child6 text-[80px] text-center font-mono font-bold border-2 border-r-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+        </div>
+        <div class="parent flex">
+            <div class="child7 text-[80px] text-center font-mono font-bold border-2 border-l-0 border-b-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+            <div class="child8 text-[80px] text-center font-mono font-bold border-2 border-b-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+            <div class="child9 text-[80px] text-center font-mono font-bold border-2 border-b-0 border-r-0 border-black w-28 h-28 hover:bg-blue-900 hover:cursor-pointer" onclick="play(this)"></div>
+        </div>
+    </div>
+    <div class="flex justify-center mt-8 p-4">
+        <div id="xturn" class="border-2 border-black text-2xl rounded-xl p-2 mr-2 fon" >X's Turn</div>
+        <div id="oturn" class="border-2 border-black text-2xl rounded-xl p-2 ml-2">O's Turn</div>
+    </div>
+
+    <div id="xwin" class="justify-self-center border-2 hidden border-black bg-blue-500 font-bold h-60 w-72 rounded-2xl p-10 font-mono text-6xl text-white">X Wins
+    </div>
+    <div id="owin" class="justify-self-center border-2 hidden border-black bg-red-500 font-bold text-black h-60 w-72 rounded-2xl p-10 font-mono text-6xl ">O Wins
+    </div>
+    
+</body>
+<script src="app.js"></script>
+</html>
